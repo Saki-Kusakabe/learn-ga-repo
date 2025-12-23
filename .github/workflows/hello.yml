@@ -6,5 +6,5 @@ jobs:	# job definition
 	hello:	# job id
 		runs-on: ubuntu-latest	# runner
 		steps:	# setp definition
-			-run: echo "Hello, world"  # run shell command
-			-uses: actions/checkout@v4  # call action
+			- run: echo "Hello, world"  # run shell command
+			- uses: actions/checkout@v4  # call action
