@@ -1,10 +1,10 @@
-# "Hello, world" workflow syntax
+name: Hello
 
-name: Hello # Workflow name
-on: push # event (triggered on push event)
-jobs:	# job definition
-	hello:	# job id
-		runs-on: ubuntu-latest	# runner
-		steps:	# setp definition
-			- run: echo "Hello, world"  # run shell command
-			- uses: actions/checkout@v4  # call action
+on: push
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo "Hello, world"
+        uses: actions/checkout@v4
